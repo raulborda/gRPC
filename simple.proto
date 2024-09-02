@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service SimpleService {
+  rpc Add (AddRequest) returns (AddResponse);
+}
+
+message AddRequest {
+  int32 number1 = 1;
+  int32 number2 = 2;
+}
+
+message AddResponse {
+  int32 result = 1;
+}
